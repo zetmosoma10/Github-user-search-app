@@ -99,15 +99,16 @@ p {
 /* Buttons */
 .btn {
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: var(--white);
   cursor: pointer;
   font-size: 1.4rem;
   font-weight: bold;
   font-family: inherit;
+  margin-left: 1.3rem;
   padding: 1.1rem 0;
   outline: none;
-  width: 100%;
+  width: 84px;
   transition: all 0.3s;
 }
 
@@ -118,4 +119,58 @@ p {
 .btn--primary:hover,
 .btn--primary:focus {
   background-color: #60abff;
+}
+
+@media screen and (min-2idth: 768px) {
+  .btn {
+    width: 106px;
+  }
+}
+
+/* Form */
+.form {
+  background-color: var(--white);
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 4rem;
+}
+
+.form__input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  font-family: inherit;
+  color: var(--primary-color);
+}
+
+.form__error-text {
+  /* margin-right: 1rem; */
+  color: #f74646;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.form__search {
+  align-self: center;
+  margin: 0 0.8rem 0 1rem;
+}
+
+::placeholder {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+@media screen and (min-with: 768px) {
+  .form__input {
+    font-size: 1.8rem;
+  }
+
+  ::placeholder {
+    font-size: 1.8rem;
+  }
 }
