@@ -1,0 +1,44 @@
+:root {
+  /* Main colors*/
+  --primary-color: #4b6a9b;
+  --secondary-color: #2b3442;
+  --accent-color: #0079ff;
+  --body-bg: #f6f8ff;
+
+  /* second main colors */
+  --Greyish-blue: #697c9a;
+  --Very-greyish-white: #fefefe;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--body-bg);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+p {
+  font-size: 1.3rem;
+}
