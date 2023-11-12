@@ -8,6 +8,7 @@
   /* second main colors */
   --Greyish-blue: #697c9a;
   --Very-greyish-white: #fefefe;
+  --white: #fff;
 }
 
 html {
@@ -41,4 +42,80 @@ h2 {
 
 p {
   font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Icons  */
+.icon-social {
+  display: flex;
+}
+
+.icon-social__name {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.icon-social__name:hover {
+  text-decoration: underline;
+}
+
+/* Followers */
+
+.subscribers {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.subscribers p {
+  margin-bottom: 0.8rem;
+}
+
+.subscribers__number {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribers__number {
+    font-size: 2.2rem;
+  }
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 1.1rem 0;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.btn--primary {
+  background-color: var(--accent-color);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: #60abff;
 }
