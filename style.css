@@ -26,8 +26,17 @@ html {
 body {
   font-family: "Space Mono", monospace;
   background-color: var(--body-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-color);
   font-size: 1.5rem;
+  padding-bottom: 10rem;
+}
+
+main {
+  max-width: 730px;
+  height: 611px;
 }
 
 h1 {
@@ -59,6 +68,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav h1 {
+  margin-bottom: 0;
 }
 
 .switch-mode {
@@ -109,15 +122,23 @@ nav {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .links {
+    margin-left: 126px;
+  }
+}
+
 /* Followers */
 
 .subscribers {
   border-radius: 10px;
+  background-color: var(--body-bg);
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
   padding: 1.5rem;
+  margin: 2.3rem 0 2.4rem;
 }
 
 .subscribers p {
@@ -180,7 +201,6 @@ nav {
   vertical-align: bottom;
 }
 
-
 @media screen and (min-2idth: 768px) {
   .btn {
     width: 106px;
@@ -195,7 +215,7 @@ nav {
   cursor: pointer;
   display: flex;
   padding: 0.5rem;
-  margin-top: 4rem;
+  margin-top: 3.6rem;
 }
 
 .form__input {
@@ -236,8 +256,16 @@ nav {
 }
 
 /* Profile header */
+.profile {
+  background-color: var(--white);
+  border-radius: 15px;
+  margin-top: 1.6rem;
+  padding: 3.2rem 2.4rem 4.7rem;
+}
+
 .header {
   display: flex;
+  margin-bottom: 3.3rem;
 }
 
 .header__content-name h2 {
@@ -262,6 +290,10 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  .profile {
+    margin-top: 2.4;
+  }
+
   .header__image {
     width: 117px;
     height: 117px;
@@ -273,6 +305,9 @@ nav {
 }
 
 @media screen and (min-width: 900px) {
+  .header {
+    margin-bottom: 0;
+  }
   .header__content {
     display: flex;
     justify-content: space-between;
