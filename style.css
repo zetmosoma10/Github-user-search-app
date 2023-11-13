@@ -54,9 +54,38 @@ p {
   }
 }
 
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-mode {
+  display: flex;
+  cursor: pointer;
+}
+
+.switch-mode__name {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 2.5px;
+}
+
+.switch-mode:hover {
+  color: var(--secondary-color);
+}
+
+.switch-mode__icon:hover {
+  fill: var(--secondary-color);
+}
 /* Icons  */
+
 .icon-social {
   display: flex;
+  margin-bottom: 1.6rem;
 }
 
 .icon-social__name {
@@ -67,6 +96,17 @@ p {
 
 .icon-social__name:hover {
   text-decoration: underline;
+}
+
+.location {
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* Followers */
@@ -120,6 +160,26 @@ p {
 .btn--primary:focus {
   background-color: #60abff;
 }
+
+.btn-switcher {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.btn-switcher:hover {
+  color: var(--secondary-color);
+}
+
+.switch-mode__icon {
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+
 
 @media screen and (min-2idth: 768px) {
   .btn {
