@@ -174,3 +174,52 @@ p {
     font-size: 1.8rem;
   }
 }
+
+/* Profile header */
+.header {
+  display: flex;
+}
+
+.header__content-name h2 {
+  margin-bottom: 0;
+}
+
+.header__content-name h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  margin-bottom: 0.6rem;
+}
+
+.header__content {
+  width: 100%;
+}
+
+.header__image {
+  width: 70px;
+  height: 70px;
+  margin-right: 1.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__image {
+    width: 117px;
+    height: 117px;
+  }
+
+  .header__content-name h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__bio,
+  .subscribers {
+    margin-left: 126px;
+  }
+}
