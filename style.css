@@ -207,7 +207,7 @@ nav h1 {
   color: var(--primary-color);
 }
 
-@media screen and (min-2idth: 768px) {
+@media screen and (min-width: 768px) {
   .btn {
     width: 106px;
   }
@@ -236,7 +236,6 @@ nav h1 {
 }
 
 .form__error-text {
-  /* margin-right: 1rem; */
   color: #f74646;
   align-self: center;
   margin-bottom: 0;
@@ -252,7 +251,7 @@ nav h1 {
   font-size: 1.3rem;
 }
 
-@media screen and (min-with: 768px) {
+@media screen and (min-width: 768px) {
   .form__input {
     font-size: 1.8rem;
   }

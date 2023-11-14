@@ -7,26 +7,26 @@ const switchMode = document.querySelector(".switch-mode");
 const formInput = document.querySelector(".form__input");
 const formErrorText = document.querySelector(".form__error-text");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  formErrorText.textContent = null;
+window.addEventListener("DOMContentLoaded", () => {
   LoadingState("Loading");
-  const value = formInput.value.trim("");
-  if (value === "") {
-    formErrorText.textContent = "No results";
-    LoadingState("Input value is empty");
-    return;
-  }
-  displayData(apiEndpoint, value);
+  displayData(apiEndpoint, "john");
 });
 
 const LoadingState = (state) => {
   profileContainer.innerHTML = `<h2>${state}...</h2>`;
 };
 
-window.addEventListener("DOMContentLoaded", () => {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const value = formInput.value.trim("");
+  formErrorText.textContent = null;
   LoadingState("Loading");
-  displayData(apiEndpoint, "john");
+  if (value === "") {
+    formErrorText.textContent = "No results";
+    LoadingState("Input value is empty");
+    return;
+  }
+  displayData(apiEndpoint, value);
 });
 
 const handleThemeToggle = () => {

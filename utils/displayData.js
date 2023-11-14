@@ -22,16 +22,16 @@ const displayData = async (apiEndpoint, value) => {
   try {
     const userData = await fetchData(apiEndpoint, value);
     const {
+      avatar_url,
       created_at,
-      name,
       bio,
       blog,
       company,
-      location,
-      login,
       followers,
       following,
-      avatar_url,
+      location,
+      login,
+      name,
       public_repos,
       twitter_username,
     } = userData;
