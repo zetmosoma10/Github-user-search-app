@@ -1,5 +1,6 @@
 import displayData from "./utils/displayData.js";
 const apiEndpoint = " https://api.github.com/users/";
+const profileContainer = document.querySelector(".profile");
 
 const form = document.querySelector(".form");
 const formInput = document.querySelector(".form__input");
@@ -12,7 +13,7 @@ form.addEventListener("submit", (e) => {
   displayData(apiEndpoint, value);
 });
 
-window.addEventListener(
-  "DOMContentLoaded",
-  displayData(`${apiEndpoint}`, "john")
-);
+window.addEventListener("DOMContentLoaded", () => {
+  profileContainer.innerHTML = `<h2>Loading...</h2>`;
+  displayData(`${apiEndpoint}`, "john");
+});

@@ -7,10 +7,10 @@ const fetchData = async (apiEndpoint, value) => {
       formErrorText.textContent = "No results";
       return;
     }
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.log(`Error fetching data: ${error}`);
+    return null;
   }
 };
 

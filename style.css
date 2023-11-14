@@ -74,26 +74,19 @@ nav h1 {
   margin-bottom: 0;
 }
 
-.switch-mode {
+.btn-switcher {
   display: flex;
-  cursor: pointer;
+  align-items: center;
 }
 
-.switch-mode__name {
-  margin-right: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.3rem;
-  letter-spacing: 2.5px;
-}
-
-.switch-mode:hover {
+.btn-switcher:hover {
   color: var(--secondary-color);
 }
 
-.switch-mode__icon:hover {
-  fill: var(--secondary-color);
+.switch-mode__icon {
+  margin-left: 5px;
 }
+
 /* Icons  */
 
 .icon-social {
@@ -194,15 +187,6 @@ nav h1 {
   font-weight: bold;
   cursor: pointer;
   color: var(--primary-color);
-}
-
-.btn-switcher:hover {
-  color: var(--secondary-color);
-}
-
-.switch-mode__icon {
-  margin-left: 5px;
-  vertical-align: bottom;
 }
 
 @media screen and (min-2idth: 768px) {
